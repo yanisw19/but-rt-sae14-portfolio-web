@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skills | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-left">PORTFOLIO</div>
+  <nav class="nav-center">
+    <a href="en-index.html">Home</a>
+    <a href="en-about.html">About</a>
+    <a href="en-skills.html">Skills</a>
+    <a href="en-projects.html">Projects</a>
+    <a href="en-contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="page">
+  <h1>Skills</h1>
+
+  <p class="skills-intro">
+    Skills developed during my Bachelor in Networks & Telecommunications
+    as well as through personal projects.
+  </p>
+
+  <div class="skills-tabs">
+    <button class="tab active" data-tab="all">Show all</button>
+    <button class="tab" data-tab="prog">Programming</button>
+    <button class="tab" data-tab="sys">Systems</button>
+    <button class="tab" data-tab="net">Networking</button>
+    <button class="tab" data-tab="tools">Tools</button>
+  </div>
+
+  <!-- SHOW ALL -->
+  <div class="tab-content active" id="all">
+
+    <h3>Program</h3>
+    <div class="skill-line"><span>HTML</span><span class="stars">★★★★☆</span></div>
+    <div class="skill-line"><span>CSS</span><span class="stars">★★★☆☆</span></div>
+    <div class="skill-line"><span>JavaScript</span><span class="stars">★☆☆☆☆</span></div>
+    <div class="skill-line"><span>Python</span><span class="stars">★★★★★</span></div>
+    <div class="skill-line"><span>SQL</span><span class="stars">★★★★☆</span></div>
+
+
+    
+    <h3>Systems</h3>
+    <div class="skill-line"><span>Windows</span><span class="stars">★★★★★</span></div>
+    <div class="skill-line"><span>Linux administration</span><span class="stars">★★★★☆</span></div>
+    <div class="skill-line"><span>Shell / command line</span><span class="stars">★★★☆☆</span></div>
+
+    <h3>Network</h3>
+    <div class="skill-line"><span>IP addressing</span><span class="stars">★★★★☆</span></div>
+    <div class="skill-line"><span>Network protocols (TCP/IP, DNS)</span><span class="stars">★★★☆☆</span></div>
+    <div class="skill-line"><span>Network segmentation (VLAN – basics)</span><span class="stars">★★★☆☆</span></div>
+    <div class="skill-line"><span>Wireless networks (Wi-Fi)</span><span class="stars">★★★☆☆</span></div>
+
+    <h3>Tools</h3>
+    <div class="skill-line"><span>Git / GitHub</span><span class="stars">★★★☆☆</span></div>
+    <div class="skill-line"><span>Visual Studio Code</span><span class="stars">★★★★★</span></div>
+    <div class="skill-line"><span>Terminal / Shell</span><span class="stars">★★★☆☆</span></div>
+    <div class="skill-line"><span>Office Suite (Word, Excel, PowerPoint)</span><span class="stars">★★★★☆</span></div>
+    <div class="skill-line"><span>Wireshark</span><span class="stars">★★★☆☆</span></div>
+
+  </div>
+
+  <!-- PROGRAMMING -->
+  <div class="tab-content" id="prog">
+    <div class="skill-line"><span>HTML</span><span class="stars">★★★★☆</span></div>
+    <div class="skill-line"><span>CSS</span><span class="stars">★★★☆☆</span></div>
+    <div class="skill-line"><span>JavaScript</span><span class="stars">★☆☆☆☆</span></div>
+    <div class="skill-line"><span>Python</span><span class="stars">★★★★★</span></div>
+    <div class="skill-line"><span>SQL</span><span class="stars">★★★★☆</span></div>
+
+  </div>
+
+ 
+  <!-- SYSTEMS -->
+  <div class="tab-content" id="sys">
+    <div class="skill-line"><span>Windows</span><span class="stars">★★★★★</span></div>
+    <div class="skill-line"><span>Linux administration</span><span class="stars">★★★★☆</span></div>
+    <div class="skill-line"><span>Shell / command line</span><span class="stars">★★★☆☆</span></div>
+  </div>
+
+  <!-- NETWORKING -->
+  <div class="tab-content" id="net">
+    <div class="skill-line"><span>IP addressing</span><span class="stars">★★★★☆</span></div>
+    <div class="skill-line"><span>Network protocols (TCP/IP, DNS)</span><span class="stars">★★★☆☆</span></div>
+    <div class="skill-line"><span>Network segmentation (VLAN – basics)</span><span class="stars">★★★☆☆</span></div>
+    <div class="skill-line"><span>Wireless networks (Wi-Fi)</span><span class="stars">★★★☆☆</span></div>
+  </div>
+
+  <!-- TOOLS -->
+  <div class="tab-content" id="tools">
+    <div class="skill-line"><span>Git / GitHub</span><span class="stars">★★★☆☆</span></div>
+    <div class="skill-line"><span>Visual Studio Code</span><span class="stars">★★★★★</span></div>
+    <div class="skill-line"><span>Office Suite (Word, Excel, PowerPoint)</span><span class="stars">★★★★☆</span></div>
+    <div class="skill-line"><span>Wireshark</span><span class="stars">★★★☆☆</span></div>
+  </div>
+
+</main>
+
+<footer class="bottom-nav">
+  <div class="bottom-content">
+    <a href="CVGROTYANIS.pdf">CV</a>
+    <a href="https://www.linkedin.com/in/yanis-grot-0b97573a2/">LinkedIn</a>
+
+    <!-- Back to FR -->
+    <a href="skills.html" class="lang-switch" title="Version française">
+      <img src="drapeau.jpg" alt="French version" class="flag">
+    </a>
+  </div>
+  <p class="academic">Website created as part of an academic project</p>
+</footer>
+
+<script>
+  const tabs = document.querySelectorAll(".tab");
+  const contents = document.querySelectorAll(".tab-content");
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      tabs.forEach(t => t.classList.remove("active"));
+      contents.forEach(c => c.classList.remove("active"));
+      tab.classList.add("active");
+      document.getElementById(tab.dataset.tab).classList.add("active");
+    });
+  });
+</script>
+
+</body>
+</html>

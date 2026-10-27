@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="nav-left">PORTFOLIO</div>
+  <nav class="nav-center">
+    <a href="en-index.html">Home</a>
+    <a href="en-about.html">About</a>
+    <a href="en-skills.html">Skills</a>
+    <a href="en-projects.html">Projects</a>
+    <a href="en-contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="page">
+  <h1>About me</h1>
+
+  <div class="about-container">
+
+    <!-- LEFT COLUMN : INTRODUCTION -->
+    <div class="about-text reveal">
+
+      <p class="about-intro">
+        My name is <strong>Yanis GROT</strong>, currently a student in  
+        <strong>BUT Networks & Telecommunications</strong> at  
+        <strong>IUT Sorbonne Paris Nord</strong>.
+      </p>
+
+      <div class="about-block">
+        <h3>Interests</h3>
+        <p>
+          Passionate about digital technology, I am particularly interested in 
+          <strong>digital technologies, and more specifically in computer networks, systems, and cybersecurity.</strong>
+
+        </p>
+      </div>
+
+      <div class="about-block">
+        <h3>Approach</h3>
+        <p>
+        Passionate about the workings of technical infrastructures and their security, 
+        I am constantly seeking to understand, experiment, and improve my skills 
+        through <strong>practical projects</strong>, both academic and personal.
+
+        </p>
+      </div>
+
+      <div class="about-block">
+        <h3>Key skills</h3>
+        <ul class="about-list">
+          <li>System administration (Linux & Windows)</li>
+          <li>Network configuration and analysis</li>
+          <li>Web development (HTML, CSS, JavaScript)</li>
+        </ul>
+      </div>
+
+      <div class="about-block">
+        <h3>Career goal</h3>
+        <p>
+          Currently looking for an <strong>internship or apprenticeship</strong>,
+          I aim to develop my professional experience in the field of
+          <strong>systems and networks</strong>.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- RIGHT COLUMN : EDUCATION -->
+    <div class="about-card reveal">
+      <h2>Education</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="timeline-date">2025–2026</span>
+          <p>
+            <strong>BUT Networks & Telecommunications</strong><br>
+            – IUT Sorbonne Paris Nord
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-date">2024–2025</span>
+          <p>
+            <strong>General Baccalaureate (Mathematics & Computer Science)</strong><br>
+            – Lycée La Salle Saint-Rosaire
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="bottom-nav">
+  <div class="bottom-content">
+    <a href="CVGROTYANIS.pdf">CV</a>
+    <a href="https://www.linkedin.com/in/yanis-grot-0b97573a2/">LinkedIn</a>
+    <a href="about.html" class="lang-switch" title="French version">
+      <img src="drapeau.jpg" alt="French version" class="flag">
+    </a>
+  </div>
+  <p class="academic">Website created as part of an academic project</p>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll(".reveal");
+
+  function revealOnScroll() {
+    reveals.forEach(el => {
+      if (el.getBoundingClientRect().top < window.innerHeight - 80) {
+        el.classList.add("show");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll();
+</script>
+
+</body>
+</html>

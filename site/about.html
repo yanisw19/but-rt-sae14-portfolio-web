@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>À propos | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-left">PORTFOLIO</div>
+  <nav class="nav-center">
+    <a href="index.html">Accueil</a>
+    <a href="about.html">À propos</a>
+    <a href="skills.html">Compétences</a>
+    <a href="projects.html">Projets</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="page">
+  <h1>À propos de moi</h1>
+
+  <div class="about-container">
+
+    <!-- COLONNE GAUCHE : PRÉSENTATION -->
+    <div class="about-text reveal">
+
+      <p class="about-intro">
+         Je m’appelle <strong>Yanis GROT</strong>, étudiant en  
+        <strong>BUT Réseaux & Télécommunications</strong> à  
+        l’<strong>IUT de la Sorbonne Paris Nord</strong>.
+      </p>
+
+      <div class="about-block">
+        <h3>Centres d’intérêt</h3>
+        <p>
+          Passionné par le numérique, je m’intéresse particulièrement aux
+          <strong>technologies du numérique et plus spécifiquement aux réseaux informatiques aux systèmes et à la cybersécurité.</strong>.
+        </p>
+      </div>
+
+      <div class="about-block">
+        <h3> Approche</h3>
+        <p>
+           Passionné par le fonctionnement des infrastructures techniques et leur sécurité, 
+           je cherche constamment à comprendre, expérimenter et améliorer mes compétences 
+           à travers des projets concrets, qu’ils soient académiques ou personnels.
+           et appliquer mes connaissances à travers des
+          <strong>projets concrets</strong>, académiques comme personnels.
+        </p>
+      </div>
+
+      <div class="about-block">
+        <h3>Compétences clés</h3>
+        <ul class="about-list">
+          <li>Administration systèmes (Linux & Windows)</li>
+          <li>Configuration et analyse réseau</li>
+          <li>Développement web (HTML, CSS, JavaScript)</li>
+        </ul>
+      </div>
+
+      <div class="about-block">
+        <h3>Objectif</h3>
+        <p>
+          Actuellement à la recherche d’un <strong>stage ou d’une alternance</strong>,
+          je souhaite développer mon expérience professionnelle dans le domaine
+          des <strong>systèmes et réseaux</strong>.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- COLONNE DROITE : PARCOURS -->
+    <div class="about-card reveal">
+      <h2>Parcours</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="timeline-date">2025-2026</span>
+          <p>
+            <strong>BUT Réseaux & Télécommunications</strong><br>
+            - IUT de la Sorbonne Paris Nord
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-date">2024-2025</span>
+          <p>
+            <strong>Baccalauréat Général Mathématiques & NSI</strong><br>
+            - Lycée La Salle Saint-Rosaire
+            
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="bottom-nav">
+  <div class="bottom-content">
+    <a href="CVGROTYANIS.pdf">CV</a>
+    <a href="https://www.linkedin.com/in/yanis-grot-0b97573a2/">LinkedIn</a>
+    <a href="en-about.html" class="lang-switch">
+      <img src="flag.png" alt="English version" class="flag">
+    </a>
+  </div>
+  <p class="academic">Site réalisé dans le cadre d’un projet académique</p>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll(".reveal");
+
+  function revealOnScroll() {
+    reveals.forEach(el => {
+      if (el.getBoundingClientRect().top < window.innerHeight - 80) {
+        el.classList.add("show");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll();
+</script>
+
+</body>
+</html>
